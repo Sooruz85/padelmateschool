@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PadelMate icon">
+  <rect width="64" height="64" fill="#0B140B"/>
+  <g transform="translate(32,32)">
+    <circle cx="0" cy="0" r="16" fill="#FFFFFF"/>
+    <circle cx="-6" cy="-3" r="1.6" fill="#0B140B"/>
+    <circle cx="0" cy="-6" r="1.6" fill="#0B140B"/>
+    <circle cx="6" cy="-3" r="1.6" fill="#0B140B"/>
+    <rect x="-1.5" y="14" width="3" height="14" rx="1.5" fill="#FFFFFF"/>
+  </g>
+</svg>
