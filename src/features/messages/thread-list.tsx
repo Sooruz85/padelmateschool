@@ -13,7 +13,10 @@ export async function ThreadList() {
     <ul className="space-y-2">
       {data?.map((t) => (
         <li key={t.id} className="text-sm">
-          <Link href={`/messages/${t.id}`} className="underline">Fil {t.is_dm ? "DM" : "Match"} – {new Date(t.created_at as any).toLocaleString()}</Link>
+          <Link href={`/messages/${t.id}`} className="underline">
+            {"Fil "}{t.is_dm ? "DM" : "Match"}{" – "}
+            {new Date(t.created_at as any).toISOString().replace("T", " ").slice(0, 16)}
+          </Link>
         </li>
       )) || <li className="text-sm text-muted-foreground">Aucun fil.</li>}
     </ul>

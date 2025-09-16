@@ -37,7 +37,9 @@ function Calendar({
       captionLayout={captionLayout}
       formatters={{
         formatMonthDropdown: (date) =>
-          date.toLocaleString("default", { month: "short" }),
+          new Date(Date.UTC(date.getFullYear(), date.getMonth(), 1))
+            .toISOString()
+            .slice(5, 7),
         ...formatters,
       }}
       classNames={{
